@@ -5,8 +5,7 @@ public class BasicIOController
 {
 	private String firstName = " ";
     private String lastName = " ";
-    private String first = " ";
-    private String last = " ";
+    
     
     public BasicIOController(String first, String last)
 	{
@@ -16,14 +15,14 @@ public class BasicIOController
     public void printGreeting()
     {
    // methods require parentheses 
-	  // String firstName = "Josh";
-	  // String lastName = "Sorrells";
+    	firstName = "Josh";
+    	lastName = "Sorrells";
 	   System.out.println("Hello" + firstName + " " + lastName);
 	   Scanner myScanner = new Scanner(System.in);
-	   String response = myScanner(System.in);
+	   String response = myScanner.nextLine();
 	   System.out.println(response);
-	   
-	// Contructor - method with same name as its class that initializes the class
+	   myScanner.close();
+	
     }
    
 }
